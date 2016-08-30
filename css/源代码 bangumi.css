@@ -1,0 +1,535 @@
+.bangumi-calendar-content {
+	position: relative;
+	zoom: 1
+}
+
+.bangumi-calendar-content:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	font-size: 0
+}
+
+.bangumi-calendar-content .large.wide {
+	width: 970px
+}
+
+.widescreen .bangumi-calendar-content .large.wide {
+	width: 1160px
+}
+
+.bangumi-calendar-content .sort {
+	display: none
+}
+
+.bangumi-calendar-content .bgm-calendar-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 480px;
+	background: url(../img/toggle-base.png) -485px -1257px no-repeat
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav {
+	width: 218px;
+	height: 92px;
+	margin-top: 18px;
+	cursor: pointer;
+	background: url(../img/bangumi-index-tab.png) no-repeat
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav a {
+	display: block;
+	line-height: 92px;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	text-align: left;
+	letter-spacing: 2px
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.onair {
+	background-position: -404px -84px
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.group {
+	background-position: -404px -276px
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.on a,.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav:hover a {
+	color: #fff
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.on.onair,.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav:hover.onair {
+	background-position: -84px -84px
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.on.group,.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav:hover.group {
+	background-position: -84px -276px
+}
+
+.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.on,.bangumi-calendar-content .bgm-calendar-nav .bgm-navs .bgm-nav.on a {
+	cursor: default
+}
+
+.bangumi-calendar-content .bangumi-list {
+	zoom: 1;
+	margin-left: 10px;
+	padding-left: 30px
+}
+
+.bangumi-calendar-content .bangumi-list:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	font-size: 0
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi .loading {
+	height: 72px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li {
+	float: left;
+	text-align: center;
+	width: 33.33%;
+	padding-bottom: 36px
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list li .bangumi li {
+	width: 25%
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item {
+	width: 180px;
+	zoom: 1
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	font-size: 0
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item p {
+	text-align: left
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item p.t {
+	height: 36px;
+	line-height: 18px;
+	overflow: hidden;
+	text-align: left;
+	width: 100%;
+	margin-top: -3px;
+	word-break: break-all;
+	word-wrap: break-word
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item p.num {
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+	margin-top: 2px;
+	color: #99a2aa;
+	left: 0;
+	white-space: nowrap;
+	line-height: 18px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item p.num span {
+	background: #b8c0cc;
+	border-radius: 9px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0 4px;
+	height: 18px;
+	line-height: 18px;
+	min-width: 28px;
+	max-width: 80px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #fff;
+	margin-left: 5px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item a {
+	color: inherit;
+	text-align: left
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item a:hover {
+	color: #00a1d6
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item .preview {
+	width: 72px;
+	height: 72px;
+	margin-right: 12px;
+	display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item .r-i {
+	float: left;
+	width: 96px;
+	height: 72px;
+	position: relative
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item img {
+	width: 72px;
+	height: 72px;
+	transition: .3s transform;
+	border-radius: 4px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li .c-item img:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1)
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li.new .c-item p.num span {
+	background: #ff8eb3
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li a.dy {
+	color: #fff;
+	background: #00a1d6;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+	padding: 3px 8px;
+	border-radius: 4px
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li a.dy:hover {
+	background: #38afe1;
+	color: #fff
+}
+
+.bangumi-calendar-content .bangumi-list li .bangumi li a.dy.done {
+	background: #b8c0cc
+}
+
+.bangumi-calendar-content .bangumi-list li.empty {
+	height: 188px
+}
+
+.bangumi-calendar-content .bangumi-list li.hidden {
+	display: none
+}
+
+.bangumi-calendar-content .bangumi-list li .side-l {
+	text-align: left;
+	font-size: 24px;
+	margin: 10px 0 30px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container {
+	width: 735px;
+	padding: 0 15px
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list .v_container {
+	width: 870px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_selector {
+	width: auto;
+	padding-bottom: 10px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .catalogy-wrp {
+	height: 40px;
+	background: url(../img/toggle-base.png) center -863px no-repeat
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list .v_container .catalogy-wrp {
+	background: url(../img/toggle-base.png) center -480px no-repeat
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector {
+	width: 700px;
+	border: none;
+	border-radius: 4px;
+	margin: 10px 0 0;
+	height: auto;
+	padding: 10px 0;
+	overflow: hidden
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list .v_container .special_selector {
+	width: 890px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector a.ckc {
+	border-radius: 5px;
+	display: block;
+	float: left;
+	line-height: 24px;
+	margin: 4px 0 3px 10px;
+	color: #222;
+	padding: 0 6px;
+	min-width: 30px;
+	text-align: center
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector a.ckc.on,.bangumi-calendar-content .bangumi-list .v_container .special_selector a.ckc:hover {
+	background: #00a1d6;
+	color: #fff
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector span {
+	display: block;
+	color: #6d757a;
+	line-height: 14px;
+	text-align: right;
+	margin: 8px 0
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector .hidden {
+	display: none
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector .special_mbox {
+	width: auto;
+	overflow: auto;
+	zoom: 1;
+	margin-bottom: 3px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector .special_mbox .left {
+	width: 64px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector .special_mbox .right {
+	width: 620px;
+	float: left
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list .v_container .special_selector .special_mbox .right {
+	width: 815px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector .special_mbox .loading {
+	position: absolute;
+	right: 0;
+	top: 18px;
+	color: #99a2aa
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .special_selector a.ckc.disable {
+	background-color: #fcfcfc;
+	border-color: #fcfcfc;
+	color: #bbb
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list {
+	overflow: hidden;
+	padding: 0 0 30px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort {
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 20px;
+	position: relative
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort a {
+	font-size: 13px;
+	padding: 8px 0;
+	color: #222;
+	margin-right: 20px;
+	position: relative;
+	border-bottom: 1px solid transparent
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort a:hover {
+	color: #00a1d6
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort a.on {
+	color: #00a1d6;
+	border-bottom: 1px solid #00a1d6
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort a.on:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border: 3px dashed #00a1d6;
+	border-bottom-style: solid;
+	border-top: none;
+	border-left-color: transparent;
+	border-right-color: transparent
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_sort .loading {
+	position: absolute;
+	right: 36px;
+	top: 18px;
+	color: #99a2aa
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul {
+	margin-right: -36px;
+	overflow: hidden
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li {
+	float: left;
+	margin-right: 26px;
+	margin-bottom: 40px
+}
+
+.widescreen .bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li {
+	margin-right: 27px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview {
+	border-radius: 5px;
+	position: relative;
+	height: 200px;
+	overflow: hidden
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview:hover {
+	transition: all .3s linear;
+	border-color: #c2c2c2
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .cover {
+	overflow: hidden;
+	border: 1px solid #f1f1f1;
+	border-radius: 4px;
+	width: 120px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .cover a {
+	display: block
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .cover img {
+	width: 120px;
+	height: 160px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .cover.nopic img {
+	width: 160px;
+	margin-left: -20px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info_wrp {
+	display: block
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info {
+	margin-top: 3px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .t {
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .t a {
+	display: block;
+	float: left;
+	width: 120px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #222
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .t a:hover {
+	color: #00a1d6
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .pt {
+	float: right;
+	width: 23px;
+	color: #f25d8e;
+	text-align: right
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .detail {
+	clear: both;
+	color: #bbb;
+	padding: 0;
+	transition: all .3s ease;
+	overflow: hidden;
+	height: 0;
+	word-break: break-all;
+	word-wrap: break-word
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .detail .tag {
+	width: 120px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .detail .cv {
+	width: 120px;
+	margin-top: 2px
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .num {
+	height: 18px;
+	line-height: 18px;
+	color: #99a2aa;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 120px;
+	white-space: nowrap
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul li .preview .info .num b {
+	color: #99a2aa
+}
+
+.bangumi-calendar-content .bangumi-list .v_container .v_list .v_ul .no-data {
+	margin: 15% auto;
+	text-align: center
+}
+
+.site-nav {
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 12px
+}
+
+.site-nav .nav-item {
+	color: #b8c0cc
+}
+
+.site-nav .nav-item.current {
+	color: #6d757a
+}
+
+.site-nav .nav-arrow {
+	color: #b8c0cc;
+	margin: 0 5px
+}
